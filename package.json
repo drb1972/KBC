@@ -1,0 +1,29 @@
+{
+  "name": "zowe-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0",
+    "odbc": "^2.3.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-help": "^1.6.1",
+    "gulp-sequence": "^1.0.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.0.3",
+    "node-cmd": "^3.0.0",
+    "plugin-error": "^1.0.1",
+    "readline-sync": "^1.4.10"
+  },
+  "scripts": {
+    "test": "mocha --reporter mochawesome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
