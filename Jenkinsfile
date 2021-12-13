@@ -19,7 +19,7 @@ pipeline {
         stage('QA') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
-                    echo 'C:\\Users\\dr891415\\Wokshop\\Zowe_CHM_Sample01\\Cast_Exec_Summay_MARBLE29.pdf'
+                    echo 'C:\\Users\\dr891415\\Git\\KBC\\Cast_Exec_Summay_MARBLE29.pdf'
                 }
             }
         }
