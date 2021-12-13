@@ -18,7 +18,9 @@
     "readline-sync": "^1.4.10"
   },
   "scripts": {
-    "test": "mocha --reporter mochawesome"
+    "test": "mocha --reporter mochawesome",
+    "retrieve": "zowe endevor ret element MARBLE29 --type COBOL --tf MARBLE29.cbl --os",
+    "upload": "zowe endevor update element MARBLE29 --type COBOL --ff MARBLE29.cbl --os"
   },
   "keywords": [],
   "author": "",
