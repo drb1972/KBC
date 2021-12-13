@@ -1,0 +1,26 @@
+{
+   "service": {
+     "-name": "PACKAGE",
+     "scope": {
+       "-name": "SERVICE",
+       "message": {
+         "-name": "CREATE",
+         "result": {
+           "package": "MARB000101",
+           "applName": "MARB",
+           "packageId": "000101",
+           "packageLevel": "4",
+           "packageType": "1",
+           "packageStatus": "6",
+           "installDate": "20210131"
+         },
+         "response": {
+           "statusMessage": "CMN2100I - SCTT002769 change package 
+                             has been created.",
+           "statusReturnCode": "00",
+           "statusReasonCode": "2100"
+         }
+       }
+     }
+   }
+ } 

@@ -14,8 +14,6 @@ pipeline {
                 //bat 'zowe plugins list'
                 //bat 'npm install gulp-cli -g'
                 //bat 'npm install'
-                bat 'hostname'
-                bat 'zowe profiles create zosmf Jenkins --port 443 --ru false --host dummy --user dummy --password dummy --ow'
             }
         }
         stage('QA') {
@@ -28,28 +26,28 @@ pipeline {
         stage('Upload Program') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
-                    bat 'rexx upload'
+                    bat 'upload'
                 }
             }
         }
         stage('Checkin') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
-                    bat 'rexx checkin'
+                    bat 'checkin'
                 }
             }
         }
         stage('Build') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
-                    bat 'rexx build'
+                    bat 'build'
                 }
             }
         }
         stage('Promote') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
-                    bat 'rexx promote'
+                    bat 'promote'
                 }
             }
         }

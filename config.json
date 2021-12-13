@@ -6,6 +6,7 @@
     "cicsProtocol"              : "https",
     "cicsRegion"                : "CICSTRN1",
     "cicsTran"                  : "MB29",
+    "copyJCL"                   : "CUST029.MARBLES.JCL(MARBCOPY)",
     "db2Database"               : "D10CPTIB",
     "db2Port"                   : 6017,
     "devDBRMLIB"                : "PRODUCT.NDVR.MARBLES.MARBLES.D1.DBRMLIB",

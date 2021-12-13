@@ -1,0 +1,16 @@
+{
+   "service": {
+     "-name": "CMPONENT",
+     "scope": {
+       "-name": "SERVICE",
+       "message": {
+         "-name": "BUILD",
+         "response": {
+           "statusMessage": "CMN8700I - Component Build service completed",
+           "statusReturnCode": "00",
+           "statusReasonCode": "8700"
+         }
+       }
+     }
+   }
+ }

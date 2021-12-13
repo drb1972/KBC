@@ -1,0 +1,16 @@
+{
+   "service": {
+     "-name": "PACKAGE",
+     "scope": {
+       "-name": "SERVICE",
+       "message": {
+         "-name": "PROMOTE",
+         "response": {
+           "statusMessage": "CMN3281I - request submitted for promotion to NORMAL",
+           "statusReturnCode": "00",
+           "statusReasonCode": "3281"
+         }
+       }
+     }
+   }
+ }
