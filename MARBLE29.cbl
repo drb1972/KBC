@@ -2,7 +2,7 @@
       * The user invokes this transaction (called MB29) via:                    
       *   MB29 <VERB>                                                           
       *                                                                         
-      * Where:                                                                  
+      * Where: **                                                               
       *   <VERB> = CRE|UPD|DEL                                                  
       *                                                                         
       * Verb Functions:                                                         
