@@ -1,6 +1,6 @@
 {
    "program"       : "MARBLE29",
-   "package"       : "MARB000102",
+   "package"       : "MARB000101",
    "DB2"           : "Y",
    "CICS"          : "Y",
    "devlib"        : "CUST029.BRIGHT.MARBLES.COBOL"
