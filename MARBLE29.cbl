@@ -165,7 +165,8 @@
                 EVALUATE TRUE                                                   
       *                                                                         
       *     Process a CREate request                                            
-      *                                                                         
+      *         
+      * Add                                                                
                 WHEN WS-RESULT-VERB-CREATE                               
                     PERFORM CHECK-IF-COLOR-FOUND                                
                     IF WS-RESULT-COLOR-FOUND THEN                               
