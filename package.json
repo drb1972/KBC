@@ -19,8 +19,9 @@
   },
   "scripts": {
     "test": "mocha --reporter mochawesome",
-    "retrieve": "zowe endevor ret element MARBLE29 --type COBOL --tf MARBLE29.cbl --os",
-    "upload": "zowe endevor update element MARBLE29 --type COBOL --ff MARBLE29.cbl --os"
+    "download": "zowe zos-files download ds \"CUST029.BRIGHT.MARBLES.COBOL(MARBLE29)\"  -e cbl --file MARBLE29",
+    "retrieve_endevor": "zowe endevor ret element MARBLE29 --type COBOL --tf MARBLE29.cbl --os",
+    "upload_endevor": "zowe endevor update element MARBLE29 --type COBOL --ff MARBLE29.cbl --os"
   },
   "keywords": [],
   "author": "",
