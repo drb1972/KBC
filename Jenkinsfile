@@ -16,35 +16,35 @@ pipeline {
                 //bat 'npm install'
             }
         }
-        stage('QA') {
+        stage('Cast_QA') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
                     echo 'C:\\Users\\dr891415\\Git\\KBC\\Cast_Exec_Summay_MARBLE29.pdf'
                 }
             }
         }
-        stage('Upload Program') {
+        stage('Upload_Cobol_SRC') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
                     bat 'upload'
                 }
             }
         }
-        stage('Checkin') {
+        stage('ZMF_Checkin') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
                     bat 'checkin'
                 }
             }
         }
-        stage('Build') {
+        stage('ZMF_Build') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
                     bat 'build'
                 }
             }
         }
-        stage('Promote') {
+        stage('ZMF_Promote') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
                     bat 'promote'
