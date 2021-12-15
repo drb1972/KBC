@@ -2,7 +2,7 @@
       * The user invokes this transaction (called MB29) via:                    
       *   MB29 <VERB>                                                           
       *      
-      * Another comment                                                                   
+      * Another comment                                                         
       * Where:                                                                  
       *   <VERB> = CRE|UPD|DEL                                                  
       *                                                                         
@@ -165,9 +165,9 @@
                 EVALUATE TRUE                                                   
       *                                                                         
       *     Process a CREate request                                            
-      *         
-      * Add                                                                
-                WHEN WS-RESULT-VERB-CREATE                               
+      *                                                                         
+      * Add                                                                     
+                WHEN WS-RESULT-VERB-CREATE                                      
                     PERFORM CHECK-IF-COLOR-FOUND                                
                     IF WS-RESULT-COLOR-FOUND THEN                               
                         PERFORM OUTPUT-MARBLE-ALREADY-EXISTS                    
